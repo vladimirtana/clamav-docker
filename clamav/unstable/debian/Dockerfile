@@ -100,8 +100,7 @@ FROM index.docker.io/library/debian:11-slim
 
 LABEL maintainer="ClamAV bugs <clamav-bugs@external.cisco.com>"
 
-EXPOSE 3310
-EXPOSE 7357
+EXPOSE $PORT
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ Etc/UTC
